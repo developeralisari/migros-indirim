@@ -1,0 +1,14 @@
+{
+  "name": "Migros İndirim Oranı",
+  "version": "2.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [{
+    "matches": ["https://www.migros.com.tr/hemen/*"],
+    "js": ["jquery-3.7.1.js","background.js"]
+  }],
+  "action": {}
+}
